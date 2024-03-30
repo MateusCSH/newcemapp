@@ -4,10 +4,6 @@ import plotly.express as px
 from service.grap import grap_bar
 from service.grapplotly import grap_plotly
 
-#python -m venv venv
-#.\venv\Scripts\activate
-#pip freeze > .\requirements.txt
-# pip install -r .\requirements.txt
 
 up = st.sidebar.file_uploader('Suba o arquivo', type='csv')
 
