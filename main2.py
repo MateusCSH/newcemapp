@@ -34,8 +34,11 @@ if up is not None:
 
         col1, col2 = st.columns(2)
         qtdhoras = int(df_select['Horas'].sum())
+        maxhoras = int(df_select['Horas'].max())
         with col1:            
             st.metric('Horas acumuldas', qtdhoras,)
+        with col2:
+            st.metric('Hora máxima', maxhoras,)
             
              
 
