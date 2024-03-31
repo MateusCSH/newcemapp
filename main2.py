@@ -34,9 +34,8 @@ if up is not None:
 
         col1, col2 = st.columns(2)
         qtdhoras = int(df_select['Horas'].sum())
-        with col1:
-            c = st.header('Horas totais')
-            st.metric(c, qtdhoras,)
+        with col1:            
+            st.metric('Horas acumuldas', qtdhoras,)
             
              
 
