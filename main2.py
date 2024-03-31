@@ -35,8 +35,9 @@ if up is not None:
         col1, col2 = st.columns(2)
         qtdhoras = int(df_select['Horas'].sum())
         with col1:
-            st.metric('horas totais', qtdhoras,)
-            st.write(" " * (len('Horas totais') - len(str(qtdhoras))) + str(qtdhoras))
+            c = st.header('Horas totais')
+            st.metric(c, qtdhoras,)
+            
              
 
     if op == 'Horas por situação':
