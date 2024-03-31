@@ -32,6 +32,10 @@ if up is not None:
         grap_bar(df_select,'Nome', 'Horas')
         grap_plotly(df_select, 'Horas', 'Nome')
 
+        col1, col2 = st.columns(2)
+        qtdhoras = df_select.sum()['Horas']
+        col1 = st.matric('Horas',qtdhoras,)
+
     if op == 'Horas por situação':
         st.subheader('Gráfico de horas por utilização')
         grap_bar(df_select, 'Situação','Horas')
