@@ -13,7 +13,7 @@ if up is not None:
 
     name = st.sidebar.multiselect('Selecione os monitores:',
                                   options=sorted(df['Nome'].unique()),
-                                  default=(df['Nome'].unique()),
+                                  default=sorted(df['Nome'].unique()),
                                    placeholder = 'Selecione o arquivo')
     
     df_select = df.query(
