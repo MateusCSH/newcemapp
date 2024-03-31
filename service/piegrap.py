@@ -9,4 +9,5 @@ def pie_grap(df, value, nomes, titulo:str):
         names = nomes,
         title=titulo
     ) 
+    fig.upadate_traces(textinf='porcent+names')
     st.plotly_chart(fig)
