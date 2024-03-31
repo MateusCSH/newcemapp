@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 from service.grap import grap_bar
 from service.grapplotly import grap_plotly
-from service.piegrap impor pie_grap
+from service.piegrap import pie_grap
 
 
 up = st.sidebar.file_uploader('Suba o arquivo', type='csv')
