@@ -6,7 +6,7 @@ from service.grapplotly import grap_plotly
 from service.piegrap import pie_grap
 
 
-up = st.sidebar.file_uploader('Suba o arquivo', type='csv','xlsx')
+up = st.sidebar.file_uploader('Suba o arquivo', type=['csv','xlsx'])
 
 if up is not None:
 
