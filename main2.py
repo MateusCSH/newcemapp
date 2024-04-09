@@ -50,8 +50,7 @@ if up is not None:
 
         titulo = 'Gráfico de porcentagem - horas por situação'
         pie_grap(df_select, 'Horas', 'Situação', titulo)
-
-        st.link_button('acess', 'https://newcemapp.streamlit.app/')
+        
 
 
     
