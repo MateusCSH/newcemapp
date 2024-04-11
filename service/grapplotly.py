@@ -11,6 +11,7 @@ def grap_plotly(df, eixo_x, eixo_y):
         orientation='h',
         title='<b>Gráfico de horas por monitor<b>',
         template='plotly_white',
+        color = 'lifeExp'
     )
 
     st.plotly_chart(fig)
