@@ -9,5 +9,5 @@ def pie_grap(df, value, nomes, titulo:str):
         names = nomes,
         title=titulo        
     ) 
-    fig.update_traces(textposition='inside')
+    fig.update_traces(textposition='inside', textinfo='labels')
     st.plotly_chart(fig)
