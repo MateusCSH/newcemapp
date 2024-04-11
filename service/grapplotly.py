@@ -12,6 +12,6 @@ def grap_plotly(df, eixo_x, eixo_y):
         title='<b>Gráfico de horas por monitor<b>',
         template='plotly_white'        
     )
-    fig.update_traces(text=df[eixo_x].sum()[eixo_x], textposition='outside')
+
 
     st.plotly_chart(fig)
