@@ -49,7 +49,7 @@ if up is not None:
         grap_plotly(df_select, 'Horas','Motivo')
         
         col1, col2, col3 = st.columns(3)
-        reun = df_select[df_select['Motivo'] == 'Reunião']['Horas'].sum()
+        reun = df_select[df_select['Motivo'] == 'Reuniao']['Horas'].sum()
 
         with col1:
             st.metric('Horas Reunião',reun,)
