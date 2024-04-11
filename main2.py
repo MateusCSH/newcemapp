@@ -48,11 +48,23 @@ if up is not None:
         grap_bar(df_select, 'Motivo','Horas')
         grap_plotly(df_select, 'Horas','Motivo')
         
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(3)
         reun = df_select[df_select['Motivo'] == 'Reuniao']['Horas'].sum()
+        monin = df_select[df_select['Motivo'] == 'Monitoria']['Horas'].sum()
+        aula = df_select[df_select['Motivo'] == 'Aula']['Horas'].sum()
+        estu = df_select[df_select['Motivo'] == 'Estudos']['Horas'].sum()
 
         with col1:
             st.metric('Horas Reunião',reun,)
+
+        with col2:
+            st.metric('Horas monitoria', moni,)
+
+        with col3:
+            st.metric('Horas aula', aula)
+
+        with col4:
+            st.metric('Horas estudo', estu)
 
         titulo = 'Gráfico de porcentagem - horas por situação'
         pie_grap(df_select, 'Horas', 'Motivo', titulo)
