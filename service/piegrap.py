@@ -7,9 +7,6 @@ def pie_grap(df, value, nomes, titulo:str):
         df,
         values=value,
         names = nomes,
-        title=titulo,
-        color_discret_map = {'Monitorio':'Blue',
-                            'Aula':'Darkblue',
-                            'Reuniao':'royalblue'}
+        title=titulo        
     )     
     st.plotly_chart(fig)
