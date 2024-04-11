@@ -10,8 +10,7 @@ def grap_plotly(df, eixo_x, eixo_y):
         y = eixo_y,
         orientation='h',
         title='<b>Gráfico de horas por monitor<b>',
-        template='plotly_white',
-        color = 'lifeExp'
+        template='plotly_white'        
     )
 
     st.plotly_chart(fig)
