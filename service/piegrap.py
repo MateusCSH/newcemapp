@@ -9,6 +9,6 @@ def pie_grap(df, value, nomes, titulo:str):
         values=value,
         names = nomes,
         title=titulo,
-        textinfo='label+percent'
+        textinfo='label'
     )     
     st.plotly_chart(fig)
