@@ -10,7 +10,7 @@ up = st.sidebar.file_uploader('Suba o arquivo', type='csv')
 
 if up is not None:
 
-    df = pd.read_csv(up, header=None, names=['Nome','Matricula','Tipo','Horas','Situação'], sep=',')
+    df = pd.read_csv(up, header=None, names=['Nome','Horas','Situação'], sep=',')
 
     name = st.sidebar.multiselect('Selecione os monitores:',
                                   options=sorted(df['Nome'].unique()),
