@@ -3,10 +3,12 @@ import pandas as pd
 import plotly.express as px
 
 def pie_grap(df, value, nomes, titulo:str):
+    label = nomes
     fig = px.pie(
         df,
         values=value,
         names = nomes,
-        title=titulo        
+        title=titulo,
+        textinfo='label+percent'
     )     
     st.plotly_chart(fig)
