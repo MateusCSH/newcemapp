@@ -47,6 +47,11 @@ if up is not None:
         st.subheader('Gráfico de horas por utilização')
         grap_bar(df_select, 'Motivo','Horas')
         grap_plotly(df_select, 'Horas','Motivo')
+        col1, col2, col3 = st.columns(3)
+        reun = df_select['Motivo'].sum()['Horas']
+
+        with col1:
+            st.metric('Horas Reunião',reun,)
 
         titulo = 'Gráfico de porcentagem - horas por situação'
         pie_grap(df_select, 'Horas', 'Motivo', titulo)
