@@ -58,7 +58,7 @@ if up is not None:
             st.metric('Horas Reunião',reun,)
 
         with col2:
-            st.metric('Horas monitoria', moni,)
+            st.metric('Horas monitoria', monin,)
 
         with col3:
             st.metric('Horas aula', aula)
