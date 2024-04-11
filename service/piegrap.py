@@ -10,5 +10,5 @@ def pie_grap(df, value, nomes, titulo:str):
         title=titulo        
     )    
     fig.update_traces(textposition='inside', textinfo='percent+label')
-    fig.update_layout(legend=dict(orientation="v", yanchor="bottom", y=0.52, xanchor="right", x=0.5))
+    fig.update_layout(legend=dict(orientation="v", yanchor="bottom", y=0.52, xanchor="right", x=0.8))
     st.plotly_chart(fig)
