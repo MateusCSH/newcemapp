@@ -31,7 +31,7 @@ if up is not None:
 
     if op == 'Horas por Monitor':
         grap_bar(df_select,'Nome', 'Horas')
-        grap_plotly(df_select, 'Horas', 'Nome')
+        grap_plotly(df_select, 'Horas', 'Nome').unique()
 
         col1, col2 = st.columns(2)
         qtdhoras = int(df_select['Horas'].sum())
