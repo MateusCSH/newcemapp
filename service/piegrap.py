@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 def pie_grap(df, value, nomes, titulo:str):   
-    night_colors = ['rgb(32, 17, 94)', 'rgb(29, 45, 48)', 'rgb(201, 117, 26)'] 
+    night_colors = ['rgb(82, 116, 209)', 'rgb(29, 45, 48)', 'rgb(201, 117, 26)'] 
     fig = px.pie(
         df,
         values=value,
