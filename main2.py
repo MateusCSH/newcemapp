@@ -36,7 +36,7 @@ if up is not None:
         col1, col2, col3 = st.columns(3)
         qtdhoras = float(df_select['Horas'].sum())
         maxhoras = int(df_select['Horas'].max())
-        qtdmoni = int(df_select['Nomes'].count())
+        qtdmoni = df_select['Nome'].count()
         
         with col1:            
             st.metric('Horas acumuldas', qtdhoras,)
