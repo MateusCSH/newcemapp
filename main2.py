@@ -33,13 +33,17 @@ if up is not None:
         grap_bar(df_select,'Nome', 'Horas')
         grap_plotly(df_select, 'Horas', 'Nome')
 
-        col1, col2 = st.columns(2)
+        col1, col2, col3 = st.columns(3)
         qtdhoras = float(df_select['Horas'].sum())
         maxhoras = int(df_select['Horas'].max())
+        qtdmoni = df_select['Nomes'].count()
+        
         with col1:            
             st.metric('Horas acumuldas', qtdhoras,)
         with col2:
             st.metric('Hora máxima', maxhoras,)
+        with col3:
+            st.metric('Quantidade monitor', qtdmoni)
             
              
 
