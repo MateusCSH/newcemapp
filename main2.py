@@ -32,7 +32,10 @@ if up is not None:
     if op == 'Horas por Monitor':
         grap_bar(df_select,'Nome', 'Horas')
         grap_plotly(df_select, 'Horas', 'Nome')
-
+        
+        st.info('INFORMAÇÕES')
+        st.subheader('',divider='rainbow')
+        
         col1, col2, col3 = st.columns(3)
         qtdhoras = float(df_select['Horas'].sum())
         maxhoras = int(df_select['Horas'].max())
