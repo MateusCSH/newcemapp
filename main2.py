@@ -57,7 +57,7 @@ if up is not None:
         grap_bar(df_select, 'Motivo','Horas')
         grap_plotly(df_select, 'Horas','Motivo')
 
-        st.info('INFORMAÇÕES')
+        st.info('**INFORMAÇÕES GERAIS**')
         st.subheader('',divider='rainbow')
         col1, col2, col3, col4 = st.columns(4)
         reun = df_select[df_select['Motivo'] == 'Reunião']['Horas'].sum()
