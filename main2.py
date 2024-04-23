@@ -40,7 +40,8 @@ if up is not None:
         qtdhoras = float(df_select['Horas'].sum())
         maxhoras = int(df_select['Horas'].max())
         qtdmoni = len(df_select['Nome'].unique())
-        
+
+        st.subheader('',divider='rainbow')
         
         with col1:            
             st.metric('Horas acumuldas', qtdhoras,)
@@ -55,13 +56,16 @@ if up is not None:
         st.subheader('Gráfico de horas por utilização')
         grap_bar(df_select, 'Motivo','Horas')
         grap_plotly(df_select, 'Horas','Motivo')
-        
+
+        st.subheader('',divider='rainbow')
         col1, col2, col3, col4 = st.columns(4)
         reun = df_select[df_select['Motivo'] == 'Reunião']['Horas'].sum()
         monin = df_select[df_select['Motivo'] == 'Monitoria']['Horas'].sum()
         aula = df_select[df_select['Motivo'] == 'Aula']['Horas'].sum()
         estu = df_select[df_select['Motivo'] == 'Estudos']['Horas'].sum()
 
+        st.subheader('',divider='rainbow')
+        
         with col1:
             st.metric('Horas Reunião',reun,)
 
