@@ -33,7 +33,7 @@ if up is not None:
         grap_bar(df_select,'Nome', 'Horas')
         grap_plotly(df_select, 'Horas', 'Nome')
         
-        st.info('INFORMAÇÕES')
+        st.info('**INFORMAÇÕES GERAIS**')
         st.subheader('',divider='rainbow')
         
         col1, col2, col3 = st.columns(3)
