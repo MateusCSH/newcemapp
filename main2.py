@@ -36,7 +36,7 @@ if up is not None:
         col1, col2, col3 = st.columns(3)
         qtdhoras = float(df_select['Horas'].sum())
         maxhoras = int(df_select['Horas'].max())
-        qtdmoni = len(df_select['Nome'].count())
+        qtdmoni = len(df_select['Nome'].unique())
         
         
         with col1:            
