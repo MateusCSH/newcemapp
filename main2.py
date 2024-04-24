@@ -53,34 +53,39 @@ if up is not None:
              
 
     if op == 'Horas por situação':
-        st.subheader('Gráfico de horas por utilização')
-        grap_bar(df_select, 'Motivo','Horas')
-        grap_plotly(df_select, 'Horas','Motivo')
 
-        st.info('**INFORMAÇÕES GERAIS**')
-        st.subheader('',divider='rainbow')
-        col1, col2, col3, col4 = st.columns(4)
-        reun = df_select[df_select['Motivo'] == 'Reunião']['Horas'].sum()
-        monin = df_select[df_select['Motivo'] == 'Monitoria']['Horas'].sum()
-        aula = df_select[df_select['Motivo'] == 'Aula']['Horas'].sum()
-        estu = df_select[df_select['Motivo'] == 'Estudos']['Horas'].sum()
+        graf_bar, info, pizza = st.tabs(['GRÁFICO DE BARRAS','INFORMAÇÕES','PIZZA'])
 
-        st.subheader('',divider='rainbow')
-        
-        with col1:
-            st.metric('Horas Reunião',reun,)
+        with graf_bar:
+            st.subheader('Gráfico de horas por utilização')
+            grap_bar(df_select, 'Motivo','Horas')
+            grap_plotly(df_select, 'Horas','Motivo')
 
-        with col2:
-            st.metric('Horas monitoria', monin,)
-
-        with col3:
-            st.metric('Horas aula', aula)
-
-        with col4:
-            st.metric('Horas estudo', estu)
-
-        titulo = 'Gráfico de porcentagem - horas por situação'
-        pie_grap(df_select, 'Horas', 'Motivo', titulo)
+        with info:
+            st.info('**INFORMAÇÕES GERAIS**')
+            st.subheader('',divider='rainbow')
+            col1, col2, col3, col4 = st.columns(4)
+            reun = df_select[df_select['Motivo'] == 'Reunião']['Horas'].sum()
+            monin = df_select[df_select['Motivo'] == 'Monitoria']['Horas'].sum()
+            aula = df_select[df_select['Motivo'] == 'Aula']['Horas'].sum()
+            estu = df_select[df_select['Motivo'] == 'Estudos']['Horas'].sum()
+    
+            st.subheader('',divider='rainbow')
+            
+            with col1:
+                st.metric('Horas Reunião',reun,)
+    
+            with col2:
+                st.metric('Horas monitoria', monin,)
+    
+            with col3:
+                st.metric('Horas aula', aula)
+    
+            with col4:
+                st.metric('Horas estudo', estu)
+        with pizza:
+            titulo = 'Gráfico de porcentagem - horas por situação'
+            pie_grap(df_select, 'Horas', 'Motivo', titulo)
         
 
 
