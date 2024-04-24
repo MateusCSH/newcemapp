@@ -57,6 +57,7 @@ if up is not None:
         graf_bar, info, pizza = st.tabs(['GRÁFICO DE BARRAS','INFORMAÇÕES','PIZZA'])
 
         with graf_bar:
+            st.info('GRÁFICO DE BARRAS')
             st.subheader('Gráfico de horas por utilização')
             grap_bar(df_select, 'Motivo','Horas')
             grap_plotly(df_select, 'Horas','Motivo')
@@ -84,6 +85,7 @@ if up is not None:
             with col4:
                 st.metric('Horas estudo', estu)
         with pizza:
+            st.info('PORCENTAGEM POR SITUAÇÃO')
             titulo = 'Gráfico de porcentagem - horas por situação'
             pie_grap(df_select, 'Horas', 'Motivo', titulo)
         
