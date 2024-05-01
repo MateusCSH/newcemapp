@@ -12,6 +12,7 @@ if up is not None:
 
     df = pd.read_csv(up, header=None, sep=',').drop(0).drop(columns=0)
     df = df.rename(columns={1:'Nome',2:'Horas',3:'Motivo'})
+    df['Horas'] = df['Horas'].astype(int)
 
     name = st.sidebar.multiselect('Selecione os monitores:',
                                   options=sorted(df['Nome'].unique()),
