@@ -36,7 +36,7 @@ if up is not None:
     st.write('Sua opção:', op)
 
     if op == 'Horas por Monitor':
-        grap_bar(df_select,'Nome', 'Horas')
+        #grap_bar(df_select,'Nome', 'Horas')
         grap_plotly(df_select, 'Horas', 'Nome')
         
         st.info('**INFORMAÇÕES GERAIS**')
@@ -97,6 +97,18 @@ if up is not None:
             st.subheader('', divider = 'rainbow')
             titulo = 'Gráfico de porcentagem - horas por situação'
             pie_grap(df_select, 'Horas', 'Motivo', titulo)
+            
+            fig = px.bar(
+                        df_select,
+                        x='Nome', 
+                        y='Horas', 
+                        color='Motivo', 
+                        barmode='group', 
+                        title='Horas por Nome e Motivo',
+                        text=None)
+
+            st.plotly_chart(fig)
+            
             st.subheader('', divider = 'rainbow')
         
 
