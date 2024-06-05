@@ -74,7 +74,7 @@ if up is not None:
                 st.markdown(f"<h1 style='text-align: left; font-size:30px; color:#09e083'>{hrs_selecionada} hrs</h1>", unsafe_allow_html=True)
 
             with col2:
-                st.markdown(f"<h1 style='text-align: left; font-size:30px; color:#00ff15'>{maxhrs} hrs</h1>", unsafe_allow_html=True)
+                st.markdown(f"<h1 style='text-align: left; font-size:30px; color:#00ff15'>{maxhoras} hrs</h1>", unsafe_allow_html=True)
             
             fig = go.Figure(go.Indicator(
                 mode="gauge+number",
