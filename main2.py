@@ -73,7 +73,7 @@ if up is not None:
             fig = go.Figure(go.Indicator(
                 mode="gauge+number",
                 value=porcentagem,
-                title={'text': "Percentual de Horas [ORIGINAL]},
+                title={'text': "Percentual de Horas [ORIGINAL]"},
                 gauge={'axis': {'range': [None, 100]}},
                 domain={'x': [0, 1], 'y': [0, 1]}
             ))
