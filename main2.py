@@ -5,7 +5,11 @@ from service.grap import grap_bar
 from service.grapplotly import grap_plotly
 from service.piegrap import pie_grap
 
-
+# ADICIONADO----------------
+with open("styles.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+st.sidebar.image('ifes.png', caption='LABORATORIO CEM')
+# -----------
 up = st.sidebar.file_uploader('Suba o arquivo', type='csv')
 
 if up is not None:
