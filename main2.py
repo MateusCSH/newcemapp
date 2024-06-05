@@ -60,16 +60,12 @@ if up is not None:
         
 #-----------------------
         nome = st.selectbox('Escolha o monitor',
-                                (df['Nome'].unique()))
-            
-        df_select2 = df.query('Nome == @nome')
-        df_select2['Horas']=df_select2['Horas'].astype(int)  
-
+                                (df['Nome'].unique()))   
 
         if nome:
-            df_select = df.query('Nome == @nome')
+            df_select2 = df.query('Nome == @nome')
             hrs_total = df['Horas'].sum()
-            hrs_selecionada = df_select['Horas'].sum()
+            hrs_selecionada = df_select2['Horas'].sum()
             porcentagem = (hrs_selecionada / hrs_total) * 100 if hrs_total != 0 else 0
 
             st.markdown(f"<h1 style='text-align: left; font-size:30px; color:#09e083'>{hrs_selecionada} hrs</h1>", unsafe_allow_html=True)
