@@ -60,7 +60,7 @@ if up is not None:
         
 #-----------------------
         nome = st.selectbox('Escolha o monitor',
-                                (df['Nome'].unique()))   
+                                (sorted(df['Nome'].unique())))   
 
         if nome:
             df_select2 = df.query('Nome == @nome')
