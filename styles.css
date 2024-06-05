@@ -1,0 +1,170 @@
+
+/*  ASSITIR O VIDEO DO JAPONÊS DEPOIS
+https://www.youtube.com/watch?v=Q-hlFktj6HE*/
+
+
+/*https://www.youtube.com/watch?v=Q-hlFktj6HE*/
+
+.st-emotion-cache-sh2krr.e1nzilvr5{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.st-emotion-cache-xwtqgq.e1b2p2ww15{
+    background-color: rgb(52, 56, 61);
+    border-radius: 10%;
+    border-color: white;
+    box-shadow: 0 0 0 2px cyan;
+}
+
+
+
+.st-emotion-cache-9ycgxx.e1b2p2ww12{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+.st-emotion-cache-7oyrr6.e1bju1570{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+/*https://uiverse.io/gharsh11032000/neat-bullfrog-61*/
+.st-emotion-cache-hc3laj{
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px #ffffffc0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+/*  
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(80px) rotateX(15deg) rotateY(-15deg) translateY(-10px);
+    border-radius: 50%;
+*/
+.st-emotion-cache-hc3laj:hover{
+    box-shadow: 0 0 0 5px #cc00ff60;
+    color: #ffffff;
+    transform: translate3d(5px, 35px, 0px) perspective(95px) rotateY(-10deg) translateY(-10px);
+    transition: 1s;
+    overflow: hidden;
+}
+
+.st-emotion-cache-ltfnpr{
+    background-color: transparent;
+    color: rgb(23, 248, 3);
+}
+
+/* Span = # (identificação não por tag)*/
+
+/* BOTAO DE RECARREGAR A PAGINA ESCONDIDO AQUI*/
+
+/*#MainMenu{
+    visibility: hidden;
+}*/
+
+
+.stDeployButton{
+    visibility: hidden;
+}
+
+
+/*Números horas por monitos st.metrics
+.st-emotion-cache-1wivap2.e1i5pmia3{
+    text-align: center;
+    font-size: 35px;    
+    color: rgb(255, 251, 0);
+}
+
+.st-emotion-cache-1wivap2.e1i5pmia3:hover{
+    text-align: center;
+    font-size: 35px;    
+    color: rgb(53, 52, 17);
+}
+*/
+
+.st-emotion-cache-ocqkz7.e1f1d6gn5{
+    /*background-color: #534949;*/
+    border: 1px solid #dcdcdc;
+    padding: 20px 20px 20px 70px;
+    padding: 5% 5% 5% 10%;
+    border-radius: 15px;
+    text-align: left;
+}
+
+/*Números*/
+.st-emotion-cache-1r6slb0.e1f1d6gn3{
+    background-color: transparent;
+    color: white;
+    text-align: left;
+}
+
+.st-emotion-cache-1r6slb0.e1f1d6gn3:hover{
+    background-color: transparent;
+    color: rgb(146, 101, 197);
+    text-align: left;
+    transform: translate3d(5px, 10px, 0px) perspective(95px) translateY(-5px);
+    transition: 1s;
+}
+
+
+/*Horas separado
+.st-emotion-cache-10trblm.e1nzilvr1{    
+    color: blueviolet;
+    text-align: left;
+}
+
+.st-emotion-cache-10trblm.e1nzilvr1:hover{    
+    color: rgb(27, 219, 219);
+    text-align: left;
+    transform: translate3d(5px, 5px, 0px) perspective(95px) translateY(-5px);
+    transition: 1s;
+}*/
+
+
+
+/*Container de separação*/
+.st-emotion-cache-cnbvxy.e1nzilvr5{
+    text-align: center;
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+}
+
+
+/*Porcent / informação*/
+.st-emotion-cache-10trblm.e1nzilvr1{
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
+
+/* st.warning -> msg de aviso quando o usuário não inseril o arquivo
+.stAlert{
+    background-color: aqua;
+    border-radius: 5px;
+    opacity: 90%;
+}*/
+
+
+
+
+
+
