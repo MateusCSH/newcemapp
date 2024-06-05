@@ -71,10 +71,9 @@ if up is not None:
 
             col1, col2 = st.columns(2)
             with col1:
-                st.markdown(f"<h1 style='text-align: left; font-size:30px; color:#09e083'>{hrs_selecionada} hrs</h1>", unsafe_allow_html=True)
-
+                st.metric('Total Horas',hrs_selecionada,)
             with col2:
-                st.markdown(f"<h1 style='text-align: left; font-size:30px; color:#00ff15'>{maxhoras} hrs</h1>", unsafe_allow_html=True)
+                st.metric('Máx horas',maxhoras,)
             
             fig = go.Figure(go.Indicator(
                 mode="gauge+number",
