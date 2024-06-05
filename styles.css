@@ -1,13 +1,13 @@
 
 
-
+/*CONATINER BOTÃO UPLOAD*/
 .st-emotion-cache-sh2krr.e1nzilvr5{
     color: white;
     text-align: center;
     font-size: 35px;
 }
 
-
+/*CONATINER BOTÃO UPLOAD*/
 .st-emotion-cache-xwtqgq.e1b2p2ww15{
     background-color: rgb(52, 56, 61);
     border-radius: 10%;
@@ -16,13 +16,14 @@
 }
 
 
-
+/*LABELS CONATINER BOTÃO UPLOAD*/
 .st-emotion-cache-9ycgxx.e1b2p2ww12{
     color: white;
     text-align: left;
     font-size: 15px;
 }
 
+/*LABELS CONATINER BOTÃO UPLOAD*/
 .st-emotion-cache-7oyrr6.e1bju1570{
     color: white;
     text-align: left;
@@ -49,7 +50,7 @@ BOTÃO BROWSE FILLES*/
 }
 
 
-
+/*BOTÃO BROWSE FILLES no intervalo em que o mause fica em cima*/
 .st-emotion-cache-hc3laj:hover{
     box-shadow: 0 0 0 5px #cc00ff60;
     color: #ffffff;
