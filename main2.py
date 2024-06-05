@@ -80,7 +80,7 @@ if up is not None:
 
             st.plotly_chart(fig)
             
-            st.dataframe(df_select)
+            #st.dataframe(df_select)
 
 #--------------
             
