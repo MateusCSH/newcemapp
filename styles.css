@@ -32,9 +32,8 @@
 
 
 /*https://uiverse.io/gharsh11032000/neat-bullfrog-61
-BOTÃO BROWSE FILLES
-.st-emotion-cache-hc3laj*/
-.st-emotion-cache-13ejsyy.ef3psqc12{
+BOTÃO BROWSE FILLES*/
+.st-emotion-cache-hc3laj{
     position: relative;
     display: inline-block;
     padding: 12px 24px;
@@ -51,9 +50,8 @@ BOTÃO BROWSE FILLES
 }
 
 
-/*BOTÃO BROWSE FILLES no intervalo em que o mause fica em cima
-.st-emotion-cache-hc3laj*/
-.st-emotion-cache-13ejsyy.ef3psqc12:hover{
+/*BOTÃO BROWSE FILLES no intervalo em que o mause fica em cima*/
+.st-emotion-cache-hc3laj:hover{
     box-shadow: 0 0 0 5px #cc00ff60;
     color: #ffffff;
     transform: translate3d(5px, 35px, 0px) perspective(95px) rotateY(-10deg) translateY(-10px);
