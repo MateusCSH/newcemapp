@@ -182,3 +182,72 @@
 .sem_arquivo span.com_valor{
     color: darkblue;
 }
+
+
+/* IMAGENS DOS MONITORES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll{
+    margin-top: 10px;
+    margin-inline: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.scroll_container{
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    animation: scrollInfinito 20s linear infinite;
+}
+
+.scroll_container:hover{
+    animation-play-state: paused;
+}
+
+
+.scroll_item{
+    background-color: none;
+    padding: 10px 20px;
+    white-space: nowrap;
+
+}
+/* .caption { 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}*/
+
+.scroll_item img{
+    width: 250px;
+    height: 170px;
+    transition: transform 0.3s;
+    border-radius: 5px;
+}
+.scroll_item img:hover{
+    transform: scale(1.05);
+}
+
+
+@keyframes scrollInfinito {
+    from{
+        translate: 0;
+    }    
+    to{
+        translate: calc(-50%);
+    }
+}
