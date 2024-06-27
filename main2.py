@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 from service.grap import grap_bar
+from service.grap import view_img #NEW_IMG
 from service.grapplotly import grap_plotly
 from service.piegrap import pie_grap
 import plotly.graph_objects as go
@@ -45,6 +46,7 @@ if up is not None:
     st.write('Sua opção:', op)
 
     if op == 'Horas por Monitor':
+        view_img()
         #grap_bar(df_select,'Nome', 'Horas')
         grap_plotly(df_select, 'Horas', 'Nome')
 
