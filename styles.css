@@ -1,38 +1,32 @@
+/* IMAGEM (TENTAR POR UMA ENGRENAGEM RODANDO COM AS PALAVRAS EM SICRONIA) */
+.st-emotion-cache-1v0mbdj.e115fcil1:hover{
+    animation: move_img 7s linear infinite;
+}
+@keyframes move_img{
+    from, to{
+        transform: rotateZ(0deg);
+    }
 
-
-/*CONATINER BOTÃO UPLOAD*/
-.st-emotion-cache-sh2krr.e1nzilvr5{
-    color: white;
-    text-align: center;
-    font-size: 35px;
+    25%{
+        transform: rotateZ(45deg);
+    }
+    50%{
+        transform: rotateZ(0deg);
+    }
+    75%{
+        transform: rotateZ(-45deg);
+    }
 }
 
-/*CONATINER BOTÃO UPLOAD*/
 .st-emotion-cache-xwtqgq.e1b2p2ww15{
     background-color: rgb(52, 56, 61);
     border-radius: 10%;
-    border-color: white;
+    /* border-color: white; */
     box-shadow: 0 0 0 2px cyan;
 }
 
 
-/*LABELS CONATINER BOTÃO UPLOAD*/
-.st-emotion-cache-9ycgxx.e1b2p2ww12{
-    color: white;
-    text-align: left;
-    font-size: 15px;
-}
-
-/*LABELS CONATINER BOTÃO UPLOAD*/
-.st-emotion-cache-7oyrr6.e1bju1570{
-    color: white;
-    text-align: left;
-    font-size: 15px;
-}
-
-
-/*https://uiverse.io/gharsh11032000/neat-bullfrog-61
-BOTÃO BROWSE FILLES*/
+/*BOTÃO BROWSE FILLES*/
 .st-emotion-cache-hc3laj{
     position: relative;
     display: inline-block;
@@ -44,29 +38,68 @@ BOTÃO BROWSE FILLES*/
     font-weight: 600;
     color: white;
     box-shadow: 0 0 0 2px #ffffffc0;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    width: 200px;
+    animation: loop 1.5s linear infinite;
+}
+
+@keyframes loop{
+    from, to{
+        scale: 100%;
+    }
+
+    50%{
+        scale: 105%;
+    }
 }
 
 
 /*BOTÃO BROWSE FILLES no intervalo em que o mause fica em cima*/
 .st-emotion-cache-hc3laj:hover{
-    box-shadow: 0 0 0 5px #cc00ff60;
+    /* box-shadow: 0 0 0 5px #cc00ff60; */
+    box-shadow: none;
     color: #ffffff;
-    transform: translate3d(5px, 35px, 0px) perspective(95px) rotateY(-10deg) translateY(-10px);
+    /* transform: translate3d(5px, 35px, 0px) perspective(95px) rotateY(-10deg) translateY(-10px); */
     transition: 1s;
-    overflow: hidden;
+    animation: browse_files 2s linear infinite;
 }
 
-/*Label laboratório CEM (caption)*/
+@keyframes browse_files{
+    from, to{
+        border: solid 5px #13d1d1;
+    }
+
+    25%{
+        border: solid 5px #13d182;
+        transform: rotateZ(7deg);
+    }
+
+    50%{
+        border: solid 5px #13d13c;
+        transform: rotateZ(0deg);
+    }
+
+    75%{
+        transform: rotateZ(-7deg);
+    }
+
+    
+}
+
+
+
+
+
+/*Label laboratorio cem*/
 .st-emotion-cache-ltfnpr{
     background-color: transparent;
     color: rgb(23, 248, 3);
 }
 
 /* Span = # (identificação não por tag)*/
-
 
 /* BOTAO DE RECARREGAR A PAGINA ESCONDIDO AQUI*/
 
@@ -79,47 +112,73 @@ BOTÃO BROWSE FILLES*/
     visibility: hidden;
 }
 
-/*Borda st.metric*/
-.st-emotion-cache-ocqkz7.e1f1d6gn5{
-    /*background-color: #534949;*/
-    border: 1px solid #dcdcdc;
-    padding: 20px 20px 20px 70px;
-    padding: 5% 5% 5% 10%;
+
+
+
+
+.metric{
+    /*background-image: linear-gradient(45deg, #13d1d1, #20c420, #88ff00);
+    width: 200px;
+    height: 50px;*/
+    margin: 20px;
     border-radius: 15px;
-    text-align: left;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    border-left: solid 0.4rem #4bcaca ;
+    border-bottom: 0.1rem solid #13d1d1;
+    border-top: 1px solid #13d1d1;
 }
 
-
-/*Números*/
-.st-emotion-cache-1r6slb0.e1f1d6gn3{
-    background-color: transparent;
+.metric span{
     color: white;
-    text-align: left;
+
 }
 
-.st-emotion-cache-1r6slb0.e1f1d6gn3:hover{
-    background-color: transparent;
-    color: rgb(146, 101, 197);
-    text-align: left;
-    transform: translate3d(5px, 10px, 0px) perspective(95px) translateY(-5px);
-    transition: 1s;
-}
-
-
-
-/*Container de separação*/
-.st-emotion-cache-cnbvxy.e1nzilvr5{
-    text-align: center;
-    color: rgb(248, 248, 248);
+.metric span.value{
+    color: white;
     font-size: 20px;
 }
 
+.metric:hover{
+    background-image: linear-gradient(45deg, #13d1d1, #20c420, #88ff00);
+    scale: 105%;
+    transform: translate3d(0px, 5px, 0px);
+    transition: 1s;    
+}
+
+@keyframes tofly{
+
+}
+
+.metric span:hover{    
+    font-weight: bold
+}
+
+.metric span.value:hover{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
+/*ELSE - SEM ARQUIVO - 'sem_arquivo' , span  & span.com_valor*/
 
+.sem_arquivo{
+    background-color: #c0b735;
+    margin: 10px;
 
+    text-align: center;
+}
 
+.sem_arquivo span{
+    color: black;
+    font-weight: bold;
+}
 
-
-
-
+.sem_arquivo span.com_valor{
+    color: darkblue;
+}
