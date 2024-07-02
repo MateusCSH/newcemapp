@@ -14,8 +14,7 @@ import plotly.graph_objects as go
 
 with open("styles3.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-#https://www.youtube.com/watch?v=3Rp-ArQEmtA
-#Como customizar aplicativos do Streamlit (Python) com CSS
+
 
 st.sidebar.image('ifes.png', caption='LABORATORIO CEM')
 up = st.sidebar.file_uploader('Suba o arquivo', type='csv')
@@ -187,6 +186,6 @@ else:
     st.markdown(f'<div class = "sem_arquivo"> <span>Para que consigamos mostrar o relatório necessita-se subir o arquivo em</span> <span class = "com_valor">{c} <span></span> </div>', unsafe_allow_html=True)
     st.markdown(f'<div class = "sem_arquivo"> <span>OBS: Arquivo deve ser em formato</span> <span class = "com_valor"> .CSV <span></span> </div>', unsafe_allow_html=True)
 
-    st.text('Por simbolo da engenharia (engrenagem), e por para ficar rodando')
+    # st.text('Por simbolo da engenharia (engrenagem), e por para ficar rodando')
     
     st.toast('ESPERANDO ARQUIVO', icon='❗')
