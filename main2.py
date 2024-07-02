@@ -19,7 +19,7 @@ with open("styles3.css") as f:
 st.sidebar.markdown("""
     <div class="scroll">
         <div class="scroll_container">
-            <div class="scroll_item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-gVhOMXs1Rv5jChE2bdB3ptM5PZWVO-5Mdg&s" alt="mask1"></div>
+            <div class="scroll_item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVM4YzmAk55qwOPp_TNC8w83BAb7bCTVKnw&s" alt="mask1"></div>
             </div>
     </div>
     """, unsafe_allow_html=True)
