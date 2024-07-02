@@ -16,7 +16,13 @@ with open("styles3.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-st.sidebar.image('ifes.png', caption='LABORATORIO CEM')
+st.sidebar.markdown("""
+    <div class="scroll">
+        <div class="scroll_container">
+            <div class="scroll_item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-gVhOMXs1Rv5jChE2bdB3ptM5PZWVO-5Mdg&s" alt="mask1"></div>
+            </div>
+    </div>
+    """, unsafe_allow_html=True)
 up = st.sidebar.file_uploader('Suba o arquivo', type='csv')
 
 if up is not None:
